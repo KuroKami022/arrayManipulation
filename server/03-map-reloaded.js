@@ -38,3 +38,25 @@ const rta3 = orders.map(item => {
 });
 console.log('rta3', rta3); //NO MUTA POR QUE ES UN OBJETO , CREA NUEVO ESPACIO EN MEMORIA DIRECTAMENTE
 console.log('original', orders);
+
+const array = [
+  {
+    name: "Product 1",
+    price: 1000,
+    stock: 10
+  },
+  {
+    name: "Product 2",
+    price: 2000,
+    stock: 20
+  }
+]
+
+function addNewAttr(array) {
+  return array.map(item => ({
+    ...item,
+    taxes: Math.trunc(item.price * .19)
+  }))
+}
+
+const result = console.log(addNewAttr(array))
