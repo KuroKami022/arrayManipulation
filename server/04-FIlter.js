@@ -54,3 +54,18 @@ const search = (query) => {
     })
 }
 console.log(search('Nico'));
+
+const arrayOfWords = ['amor', 'sol', 'piedra', 'día']
+const newArrayOfWordsFiltered = [];
+
+function solution(array) {
+  return array.filter(words => {
+    if (words.lenght >= 4) {
+      newArrayOfWordsFiltered.push(words)
+    }
+  });
+  return newArrayOfWordsFiltered;
+};
+console.log('function', solution(arrayOfWords));
+console.log('calling new array', newArrayOfWordsFiltered);
+console.log('original', arrayOfWords);
