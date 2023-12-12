@@ -36,3 +36,12 @@ const team = [
 
 const rta3 = team.every(item => item.age <= 15)
 console.log('rta3', rta3);
+
+
+const array = [2, 4, 6, 8, 10];
+
+function checkArray(array) {
+  return array.length ?
+  array.every(item => item % 2 === 0) : false
+}
+console.log(checkArray(array));
