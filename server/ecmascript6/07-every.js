@@ -13,6 +13,8 @@ const rta2 = numbers.every(item => item <= 40)
 console.log('rta2', rta2);
 
 
+// PLAYGROUND
+
 const team = [
   {
     name: "Nicolas",
@@ -28,6 +30,9 @@ const team = [
   },
   {
     name: "Santiago",
-    age: 18,
+    age: 16,
   },
 ];
+
+const rta3 = team.every(item => item.age <= 15)
+console.log('rta3', rta3);
