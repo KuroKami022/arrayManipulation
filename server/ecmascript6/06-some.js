@@ -1,4 +1,4 @@
-const numbers = [1, 2, 3, 4];
+const numbers = [1, 3, 3, 3];
 
 let rta = false;
 for (let index = 0; index < numbers.length; index++) {
