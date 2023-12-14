@@ -16,3 +16,5 @@ console.log('...', rta2);
 console.log('rta3', rta3);
 elements.push(...othersElements);
 console.log('elements', elements);
+
+//THIS ... SPLIT OPERATOR CAN CLONE ARRAYS CONTENT BUT DOEST AFFECT THEM DIRECTLY ON MEMORY
